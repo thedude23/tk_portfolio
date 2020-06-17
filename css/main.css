@@ -424,8 +424,11 @@
   margin-top: 2rem;
 }
 
-@media (max-width: 340px) {
-  .home__name {
+@media (max-width: 320px) {
+  .home__name-first {
+    font-size: 3rem;
+  }
+  .home__name--last {
     font-size: 3rem;
   }
   .footer {
@@ -436,7 +439,7 @@
     width: 153px;
   }
   h2 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
 
