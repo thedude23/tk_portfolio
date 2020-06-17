@@ -22,6 +22,17 @@ $secondary-color: #8da3b8;
   }
 }
 
+
+@mixin media-xs {
+  @media (max-width: 340px) {
+    @content;
+  }
+}
+@mixin media-sm {
+  @media (max-width: 436px) {
+    @content;
+  }
+}
 @mixin media-md {
   @media screen and (min-width: 768px) {
     @content;

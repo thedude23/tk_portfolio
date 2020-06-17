@@ -424,6 +424,32 @@
   margin-top: 2rem;
 }
 
+@media (max-width: 340px) {
+  .home__name {
+    font-size: 3rem;
+  }
+  .footer {
+    font-size: 0.5rem;
+    margin-right: -22px;
+  }
+  .social-icons {
+    width: 153px;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 436px) {
+  .home__name {
+    font-size: 4rem;
+  }
+  .footer {
+    font-size: 0.5rem;
+    margin-right: -22px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .menu-btn {
     visibility: hidden;
