@@ -266,7 +266,7 @@
 }
 
 .projects__bio-image {
-  height: 30vh;
+  height: 50vh;
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.9))), url("../img/rsz_tk1.jpg") center;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.9)), url("../img/rsz_tk1.jpg") center;
@@ -298,6 +298,15 @@
 
 .projects__bio .text-secondary {
   padding-bottom: 1rem;
+}
+
+.projects__bio .github-projects-link {
+  border-bottom: 1px solid #8da3b8;
+}
+
+.projects__bio .github-projects-link:hover {
+  color: #8da3b8;
+  border-bottom: 1px solid white;
 }
 
 .projects__items {
@@ -506,6 +515,10 @@
 }
 
 @media screen and (min-width: 1600px) {
+  .projects img {
+    width: 100%;
+    height: 200px;
+  }
   .projects__bio-image {
     height: 50vh;
   }

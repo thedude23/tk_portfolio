@@ -64,6 +64,7 @@
   }
 
   .projects {
+    // margin-right: 120px;
     &__bio-image {
       height: 40vh;
     }
@@ -94,6 +95,13 @@
 
 // Extra large screens
 @include media-xl {
+  .projects {
+    img {
+      width: 100%;
+      height: 200px; 
+    }
+  }
+
   .projects__bio-image {
     height: 50vh;
   }
