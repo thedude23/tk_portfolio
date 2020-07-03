@@ -23,28 +23,50 @@ $secondary-color: #8da3b8;
 }
 
 
-@mixin media-xs {
-  @media (max-width: 320px) {
+@mixin media-phone {
+  @media (max-width: 414px) {
     @content;
   }
 }
-@mixin media-sm {
-  @media (max-width: 436px) {
+@mixin media-tablet-s {
+  @media screen and (min-width: 568px) {
     @content;
   }
 }
-@mixin media-md {
+@mixin media-tablet {
   @media screen and (min-width: 768px) {
     @content;
   }
 }
-@mixin media-lg {
+@mixin media-1024 {
   @media screen and (min-width: 1024px) {
     @content;
   }
 }
-@mixin media-xl {
+@mixin media-1600 {
   @media screen and (min-width: 1600px) {
     @content;
   }
 }
+
+// @mixin media-l-land {
+//   @media screen and (min-width: 736px) {
+//     @content;
+//   }
+// }
+
+// @mixin media-m-land {
+//   @media screen and (min-width: 667px) {
+//     @content;
+//   }
+// }
+
+// @mixin media-m2-land {
+//   @media screen and (min-width: 640px) {
+//     @content;
+//   }
+// }
+
+
+
+

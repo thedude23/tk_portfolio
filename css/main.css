@@ -152,7 +152,7 @@
 
 .nav .menu-nav__link {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1rem !important;
   text-transform: uppercase;
   padding: 2rem 0;
   font-weight: 300;
@@ -209,10 +209,6 @@
           justify-content: flex-end;
 }
 
-.about__bio-image p {
-  margin-bottom: 2rem;
-}
-
 .about__bio {
   width: 60vw;
   text-align: center;
@@ -220,6 +216,12 @@
 
 .about__bio .text-secondary {
   padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.about__bio p {
+  margin-bottom: 2rem;
+  font-size: 1rem;
 }
 
 .about .jobs {
@@ -286,11 +288,6 @@
           justify-content: flex-end;
 }
 
-.projects__bio-image .text-secondary {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
 .projects__bio {
   width: 60vw;
   text-align: center;
@@ -298,6 +295,12 @@
 
 .projects__bio .text-secondary {
   padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.projects__bio p {
+  margin-bottom: 2rem;
+  font-size: 1rem;
 }
 
 .projects__bio .github-projects-link {
@@ -433,32 +436,95 @@
   margin-top: 2rem;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 414px) {
   .home__name-first {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .home__name--last {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .footer {
-    font-size: 0.5rem;
-    margin-right: -22px;
+    font-size: 0.6rem !important;
+    right: 1rem;
+    margin-bottom: -2px !important;
   }
   .social-icons {
-    width: 153px;
+    width: 180px;
+  }
+  .social-icons i {
+    font-size: 16px;
   }
   h2 {
     font-size: 1.1rem;
   }
+  .jobs__job ul li {
+    font-size: 0.6rem;
+  }
+  .about footer {
+    bottom: 1rem;
+    font-size: 0.6rem;
+    margin-right: 1.8rem;
+  }
+  .about .about__bio p {
+    font-size: 0.7rem;
+  }
+  .projects__bio p {
+    font-size: 0.7rem;
+  }
+  .projects footer {
+    bottom: 1rem;
+    font-size: 0.6rem;
+    margin-right: 1.8rem;
+  }
+  .contact {
+    padding-top: 26vh;
+  }
+  .contact h2 {
+    font-size: 2rem;
+  }
+  .contact .contact__list {
+    font-size: 1rem;
+  }
 }
 
-@media (max-width: 436px) {
+@media screen and (min-width: 568px) {
   .home__name {
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+  .home h2 {
+    font-size: 1rem;
+  }
+  .jobs__job ul li {
+    font-size: 0.6rem;
+  }
+  .social-icons {
+    width: 180px;
+  }
+  .social-icons i {
+    font-size: 16px;
+  }
+  .about__bio p {
+    margin-bottom: 2rem;
+    font-size: 0.7rem;
+  }
+  .projects__bio p {
+    font-size: 0.7rem;
   }
   .footer {
-    font-size: 0.5rem;
-    margin-right: -22px;
+    font-size: 0.6rem !important;
+    right: 1rem;
+    margin-bottom: -2px !important;
+  }
+  .contact {
+    padding-top: 16vh;
+  }
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .contact .contact__list {
+    font-size: 1rem;
+    grid-gap: 1rem;
   }
 }
 
@@ -482,9 +548,12 @@
     padding-right: 1.5rem;
   }
   .nav .menu-nav__link {
-    font-size: 1.5rem;
+    font-size: 1rem !important;
   }
   .about__bio {
+    font-size: 1.5rem;
+  }
+  .about__bio p {
     font-size: 1.5rem;
   }
   .projects__bio-image {
@@ -494,23 +563,72 @@
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
-  .projects .text-secondary {
-    font-size: 3rem;
+  .projects .projects__bio p {
+    font-size: 1.5rem;
   }
-  .contact__list {
+  .jobs__job ul li {
+    font-size: 0.8rem;
+  }
+  .jobs__job h6 {
+    font-size: 1.2rem;
+  }
+  .social-icons {
+    width: 260px;
+  }
+  .social-icons i {
+    font-size: 36px;
+  }
+  footer {
+    font-size: 1.2rem !important;
+    right: 1rem;
+    margin-bottom: -2px !important;
+  }
+  .about footer {
+    bottom: 2rem;
+    font-size: 1.2rem;
+  }
+  .projects footer {
+    bottom: 2rem;
+    font-size: 1.2rem;
+  }
+  .contact {
+    padding-top: 32vh;
+  }
+  .contact h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .contact .contact__list {
+    font-size: 1.5rem;
+    grid-gap: 2rem;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .home .home__name-first {
+    font-size: 5rem;
+  }
+  .home .home__name--last {
+    font-size: 5rem;
+  }
+  .home h2 {
+    font-size: 1.3rem;
+  }
   .projects__items {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
-  .contact__list {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+  .jobs__job p {
+    font-size: 1rem;
+  }
+  .contact {
+    padding-top: 40vh;
+  }
+  .contact .contact__list {
+    -ms-grid-columns: (1fr)[3] !important;
+        grid-template-columns: repeat(3, 1fr) !important;
   }
 }
 
@@ -528,12 +646,16 @@ body {
   background: #272727;
   color: #fff;
   height: 100vh;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'MuseoModerno', cursive;
   line-height: 1;
 }
 
 h1, h2, h3 {
   font-weight: 400;
+}
+
+.listing {
+  margin-left: 20px;
 }
 
 a {
@@ -574,7 +696,7 @@ main .social-icons a:hover {
 }
 
 footer {
-  font-size: 1rem;
+  font-size: 0.6rem;
   position: fixed;
   bottom: 0.4rem;
   right: 1rem;

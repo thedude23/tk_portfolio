@@ -1,39 +1,133 @@
-// Medium screens
-@include media-xs {
+// Small screens
+@include media-phone {
   .home__name-first {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .home__name--last {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .footer {
-    font-size: 0.5rem;
-    margin-right: -22px;
+    font-size: 0.6rem !important;
+    right: 1rem;
+    margin-bottom: -2px !important;
+    // background-color: yellow;
   }
 
   .social-icons {
-    width: 153px;
+    width: 180px;
+    // background-color: yellow;
+
+    i {
+      font-size: 16px;
+    }
   }
 
   h2 {
     font-size: 1.1rem;
   }
+
+  .jobs__job {
+    ul li {
+      font-size: 0.6rem;
+    }
+  }
+
+  .about {
+    footer {
+      bottom: 1rem;
+      font-size: 0.6rem;
+      margin-right: 1.8rem;
+    }
+
+    .about__bio p {
+      font-size: 0.7rem;
+    }
+  }
+
+  .projects__bio p {
+    font-size: 0.7rem;
+  }
+
+  .projects {
+    footer {
+      bottom: 1rem;
+      font-size: 0.6rem;
+      margin-right: 1.8rem;
+    }
+  }
+
+  .contact {
+    padding-top: 26vh;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .contact__list {
+      font-size: 1rem;
+    }
+  }
 }
 
-@include media-sm {
+// Medium screens
+@include media-tablet-s {
   .home__name {
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+
+  .home h2 {
+    font-size: 1rem;
+  }
+
+  .jobs__job {
+    ul li {
+      font-size: 0.6rem;
+    }
+  }
+
+  .social-icons {
+    width: 180px;
+    // background-color: yellow;
+
+    i {
+      font-size: 16px;
+    }
+  }
+
+  .about__bio p {
+    margin-bottom: 2rem;
+    font-size: 0.7rem;
+  }
+
+  .projects__bio p {
+    font-size: 0.7rem;
   }
 
   .footer {
-    font-size: 0.5rem;
-    margin-right: -22px;
+    font-size: 0.6rem !important;
+    right: 1rem;
+    margin-bottom: -2px !important;
+    // background-color: yellow;
+  }
+
+  .contact {
+    padding-top: 16vh;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact__list {
+      font-size: 1rem;
+      grid-gap: 1rem;
+    }
   }
 }
 
-@include media-md {
+@include media-tablet {
   .menu-btn {
     visibility: hidden;
   }
@@ -54,7 +148,7 @@
       }
 
       &__link {
-        font-size: 1.5rem;
+        font-size: 1rem !important;
       }
     }
   }
@@ -63,38 +157,119 @@
     font-size: 1.5rem;
   }
 
+  .about__bio p {
+    font-size: 1.5rem;
+  }
+
   .projects {
-    // margin-right: 120px;
     &__bio-image {
       height: 40vh;
     }
     &__items {
       grid-template-columns: repeat(2, 1fr);
     }
-    .text-secondary {
-      font-size: 3rem;
+
+    .projects__bio p {
+      font-size: 1.5rem;
     }
   }
 
-  .contact__list {
-    grid-template-columns: repeat(1, 1fr);
+  .jobs__job {
+    ul li {
+      font-size: 0.8rem;
+    }
+
+    h6 {
+      font-size: 1.2rem;
+    }
+  }
+
+  .social-icons {
+    width: 260px;
+    // background-color: yellow;
+
+    i {
+      font-size: 36px;
+    }
+  }
+
+  footer {
+    font-size: 1.2rem !important;
+    right: 1rem;
+    margin-bottom: -2px !important;
+    // background-color: yellow;
+  }
+
+  .about {
+    footer {
+      bottom: 2rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  .projects {
+    footer {
+      bottom: 2rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  .contact {
+    padding-top: 32vh;
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact__list {
+      font-size: 1.5rem;
+      grid-gap: 2rem;
+
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 
 // Large screens
-@include media-lg {
+@include media-1024 {
+  .home {
+    .home__name-first {
+      font-size: 5rem;
+    }
+  
+    .home__name--last {
+      font-size: 5rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+
   .projects {
     &__items {
       grid-template-columns: repeat(3, 1fr);
     }
   }
-  .contact__list {
-    grid-template-columns: repeat(3, 1fr);
+
+  .jobs__job {
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .contact {
+    padding-top: 40vh;
+
+    .contact__list {
+      grid-template-columns: repeat(3, 1fr) !important;
+    }
   }
 }
 
 // Extra large screens
-@include media-xl {
+@include media-1600 {
   .projects {
     img {
       width: 100%;

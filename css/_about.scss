@@ -16,10 +16,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-
-    p {
-      margin-bottom: 2rem;
-    }
   }
 
   &__bio {
@@ -28,6 +24,12 @@
 
     .text-secondary {
       padding-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    p {
+      margin-bottom: 2rem;
+      font-size: 1rem;
     }
   }
 
