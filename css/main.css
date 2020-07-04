@@ -607,7 +607,7 @@
 }
 
 @media screen and (min-width: 896px) {
-  .about p {
+  .about .about__bio p {
     font-size: 1.2rem;
   }
   .projects .projects__bio p {
@@ -639,7 +639,7 @@
     -ms-grid-columns: (1fr)[3] !important;
         grid-template-columns: repeat(3, 1fr) !important;
   }
-  .about p {
+  .about .about__bio p {
     font-size: 1.5rem;
   }
   .projects .projects__bio p {
