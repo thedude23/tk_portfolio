@@ -237,6 +237,12 @@
       font-size: 1.2rem;
     }
   }
+
+  .projects {
+    .projects__bio p {
+      font-size: 1.2rem;
+    }
+  }
 }
 
 // Large screens
@@ -272,6 +278,18 @@
 
     .contact__list {
       grid-template-columns: repeat(3, 1fr) !important;
+    }
+  }
+
+  .about {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .projects {
+    .projects__bio p {
+      font-size: 1.5rem;
     }
   }
 }
