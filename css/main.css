@@ -606,6 +606,12 @@
   }
 }
 
+@media screen and (min-width: 896px) {
+  .about p {
+    font-size: 1.2rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .home .home__name-first {
     font-size: 5rem;

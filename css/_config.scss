@@ -38,6 +38,11 @@ $secondary-color: #8da3b8;
     @content;
   }
 }
+@mixin media-tablet-l {
+  @media screen and (min-width: 896px) {
+    @content;
+  }
+}
 @mixin media-1024 {
   @media screen and (min-width: 1024px) {
     @content;

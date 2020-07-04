@@ -231,6 +231,14 @@
   }
 }
 
+@include media-tablet-l {
+  .about {
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
 // Large screens
 @include media-1024 {
   .home {
