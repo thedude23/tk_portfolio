@@ -567,7 +567,7 @@
     font-size: 1.5rem;
   }
   .jobs__job ul li {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .jobs__job h6 {
     font-size: 1.2rem;
@@ -661,7 +661,7 @@ body {
   background: #272727;
   color: #fff;
   height: 100vh;
-  font-family: 'MuseoModerno', cursive;
+  font-family: 'Do Hyeon', sans-serif;
   line-height: 1;
 }
 
