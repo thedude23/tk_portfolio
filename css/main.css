@@ -431,6 +431,12 @@
   font-size: 1.5rem;
 }
 
+.contact .contact__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .contact .social-icons {
   position: initial;
   margin-top: 2rem;
